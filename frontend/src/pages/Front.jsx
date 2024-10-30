@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // Custom SVG Icons components
 const ChefHatIcon = () => (
@@ -45,7 +46,9 @@ const Front = () => {
           From quick meals to special dishes, find your next favorite here.
           </p>
           <div className="button-group">
-            <button className="primary-button">Get Started</button>
+          <Link to="/auth" className="primary-button">
+            Get Started
+        </Link>
             {/* <button className="secondary-button">Browse Recipes</button> */}
           </div>
         </div>
@@ -104,7 +107,9 @@ const Front = () => {
       <div className="cta-section">
         <h2 className="cta-title">Ready to Start Your Cooking Journey?</h2>
         <p className="cta-description">Join thousands of food lovers in our community today!</p>
-        <button className="cta-button">Join Now - It's Free!</button>
+        <Link to="/auth" className="cta-button">
+            Join Now - It's Free!
+        </Link>
       </div>
     </div>
   );

@@ -454,6 +454,9 @@ h1 {
   gap: 16px;
   justify-content: center;
 }
+.button-group a {
+  text-decoration: none; 
+}
 
 .primary-button {
   background-color: #3498db;
@@ -620,6 +623,7 @@ h1 {
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s;
+  text-decoration: none;
 }
 
 .cta-button:hover {
